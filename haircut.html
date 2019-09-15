@@ -4,7 +4,7 @@
 
 <head>
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -121,15 +121,16 @@
             <h2 class="p-5" style="color:#89004a; font-size:50px;">Styling</h2>
 
             <div class="row">
-                <div class="col-lg-4 col-sm-12">
+               
+                <div class="col-lg-4 col-sm-12" id="ladies">
                     <h3>Ladies</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12" id="men">
                     <h3>Mens</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12" id="ladies">
                     <h3>Kids</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 </div>
@@ -180,16 +181,16 @@
                 <div class="col-md-4 col-xs-4 ">
 
 
-                    <a href="https://www.instagram.com/gt_barbers/?hl=en"><img class="mediaSymbol" style="width:90px; filter: brightness(200%)" src="media/instaSymbol.png"></a>
+                    <a href="https://www.instagram.com/gt_barbers/?hl=en"><img class="mediaSymbol" style="width:90px; filter: brightness(200%)" src="/media/instaSymbol.png"></a>
 
 
 
                     <a href="https://www.facebook.com/pages/category/Hair-Salon/GT-barbers-644827069319030/">
-                        <img class="mediaSymbol" style="" src="media/fbSymbol.png"></a>
+                        <img class="mediaSymbol" style="" src="/media/fbSymbol.png"></a>
 
 
                     <a href="https://www.instagram.com/gt_barbers/?hl=en">
-                        <img class="mediaSymbol" style="" src="media/twitterSymbol.png"></a>
+                        <img class="mediaSymbol" style="" src="/media/twitterSymbol.png"></a>
 
 
                 </div>
@@ -207,6 +208,25 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+     
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('#ladies', {
+                duration: 2500,
+                origin: 'bottom'
+            }),
+
+            sr.reveal('#men', {
+                duration: 2500,
+                origin: 'bottom'
+            }),
+
+            sr.reveal('#kids', {
+                duration: 2500,
+                origin: 'bottom'
+            })
+    </script>
 
 </body></html>
