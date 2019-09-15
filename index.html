@@ -5,7 +5,7 @@
 <head>
     <title></title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
@@ -120,12 +120,11 @@
             filter: grayscale(100%);
             filter: contrast(0%)
         }
-        
+
         p {
             color: white;
             font-size: 1.5rem;
         }
-
     </style>
 </head>
 
@@ -175,11 +174,11 @@
     <div class="background">
 
 
-        <div class="container p-0">
-            <h1 style="color:white; font-size:4rem; text-align: center;  position: relative; padding-top: 150px; padding-bottom: 50px;  font-family:cursive; font-weight:bolder;">Zany's Boutique Hair Salon</h1>
-            <img class="oneImg" style="width:100%" class="mt-5" src="media/tempHairSalon.jpeg"><br id="about">
+        <div class="container p-0" >
+            <h1 class="intro1" style="color:white; font-size:4rem; text-align: center;  position: relative; padding-top: 150px; padding-bottom: 50px;  font-family:cursive; font-weight:bolder;">Zany's Boutique Hair Salon</h1>
+            <img class="intro1 oneImg" style="width:100%" class="mt-5" src="media/tempHairSalon.jpeg"><br id="about">
 
-            <h2 class="color-pink  p-5" style="color: #840a47; font-family: fantasy;">Zany is an established Norwich Boutique Hair Salon.<br><br> Aiming to provide all clients with the very highest standards in hair styling and colouring treatments </h2>
+            <h2 class="intro2 color-pink  p-5" style="color: #840a47; font-family: fantasy;">Zany is an established Norwich Boutique Hair Salon.<br><br> Aiming to provide all clients with the very highest standards in hair styling and colouring treatments </h2>
 
 
 
@@ -188,16 +187,16 @@
 
         <div class="container pb-5">
             <div class="row">
-                <div class="col-lg-6 col-md-12 column p-0">
+                <div class=" stylingSec col-lg-6 col-md-12 column p-0">
 
-                    <h3>STYLING</h3><a href="haircut.html">
+                    <h3>STYLING</h3><a href="haircut.html#ladies">
                         <img class="peoples" src="media/styling.jpeg">
                     </a>
                 </div>
 
-                <div class="col-lg-6 col-md-12 column p-0">
+                <div class=" colouringSec col-lg-6 col-md-12 column p-0">
 
-                    <h3>COLOURING</h3> <a href="haircut.html">
+                    <h3>COLOURING</h3> <a href="haircut.html#ladies">
                         <img class="peoples" src="media/coloring%20.jpeg">
                     </a>
 
@@ -207,16 +206,16 @@
             </div>
             <div class="row ">
 
-                <div class="col-lg-6 col-md-12 column p-0">
+                <div class="mensSec col-lg-6 col-md-12 column p-0">
 
-                    <h3>MENS</h3><a href="haircut.html">
+                    <h3>MENS</h3><a href="haircut.html#men">
                         <img class="peoples" src="media/mensHair.png">
                     </a>
                 </div>
 
-                <div class="col-lg-6 col-md-12 column p-0">
+                <div class="kidsSec col-lg-6 col-md-12 column p-0">
 
-                    <h3>KIDS</h3><a href="haircut.html">
+                    <h3>KIDS</h3><a href="haircut.html#kids">
                         <img class="peoples" src="media/children.jpeg">
                     </a>
                 </div>
@@ -238,7 +237,7 @@
 
             <h2 class=" p-5" style="color: #9f9097; font-family: fantasy font-bolder;">Come visit us</h2>
 
-            <div id="contact"  class="mapouter">
+            <div id="contact" class="mapouter">
                 <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=g%26t&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.maps-erstellen.de"></a>
                 </div>
                 <style>
@@ -264,7 +263,7 @@
 
                 <div class="row mt-md-5">
                     <div class="col-lg-4">
-                        <h2 >Contact</h2>
+                        <h2>Contact</h2>
                         <p> Contact us on 01603 926884</p>
                         <p>Location: 137A Unthank road NR2 2PE Norwich, Norfolk</p>
 
@@ -364,5 +363,72 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+                duration: 2500,
+                origin: 'bottom'
+            }),
+            
+        sr.reveal('.intro1', {
+                duration: 2500,
+                origin: 'bottom'
+            }),
+        
+        sr.reveal('.intro2', {
+                duration: 2000,
+                origin: 'bottom',
+                viewFactor:0.2,
+                distance:'200px'
+            }),
+        
+        sr.reveal('.stylingSec', {
+                duration: 2000,
+                origin: 'top',
+                viewFactor:0.2,
+                distance:'200px'
+            }) 
+        
+        sr.reveal('.colouringSec', {
+                duration: 2000,
+                origin: 'right',
+                viewFactor:0.2,
+                distance:'200px',
+                delay:'500'
+            }) 
+        
+        sr.reveal('.mensSec', {
+                duration: 2000,
+                origin: 'left',
+                viewFactor:0.2,
+                distance:'200px'
+            }) 
+        
+        sr.reveal('.kidsSec', {
+                duration: 2000,
+                origin: 'bottom',
+                viewFactor:0.2,
+                distance:'200px',
+                delay:'500'
+            }) 
+        
+        sr.reveal('.meet', {
+                duration: 2000,
+                origin: 'bottom',
+                viewFactor:0.2,
+                distance:'200px',
+
+            }) 
+        
+        sr.reveal('.kidsSec', {
+                duration: 2000,
+                origin: 'bottom',
+                viewFactor:0.2,
+                distance:'200px',
+                delay:'500'
+            }) 
+        
+    </script>
 </body></html>
